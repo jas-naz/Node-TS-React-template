@@ -1,0 +1,214 @@
+@import url('https://file.myfontastic.com/yvfWTynKQiPjfEj3TWy27C/icons.css') screen;
+@import url('https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.3.0/css/fabric.min.css') screen;
+#MillimanOutlookAddin .addin {
+  width: 100%;
+}
+#MillimanOutlookAddin .addin .page-1 {
+  left: 0px;
+  opacity: 1;
+}
+#MillimanOutlookAddin .addin .page-2 {
+  left: 2500px;
+  opacity: 0;
+}
+#MillimanOutlookAddin .addin .page-1,
+#MillimanOutlookAddin .addin .page-2 {
+  width: 93%;
+  position: absolute;
+  transition: left 400ms 0ms, opacity 600ms 200ms;
+}
+#MillimanOutlookAddin .addin .header {
+  height: 25px;
+  padding: 5px 12px;
+  background-color: #0067B0;
+  color: white;
+}
+#MillimanOutlookAddin .addin .header .back-arrow {
+  position: static;
+  display: none;
+  left: 200px;
+  opacity: 0;
+  cursor: pointer;
+  transition: left 300ms 0ms, opacity 350ms 50ms;
+}
+#MillimanOutlookAddin .addin .header .back-arrow.slideLeftOn {
+  display: block;
+}
+#MillimanOutlookAddin .addin .header div {
+  color: white;
+  border: 1px solid transparent;
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+}
+#MillimanOutlookAddin .addin .header div:hover {
+  border: 1px solid #bebebe;
+}
+#MillimanOutlookAddin .addin .header i {
+  margin-top: 3px;
+  font-size: 19px;
+}
+#MillimanOutlookAddin .addin .page-header {
+  font-size: 1.15em;
+  color: #0067B0;
+  margin-bottom: 15px;
+}
+#MillimanOutlookAddin .addin .control-header {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+#MillimanOutlookAddin .addin .ms-Icon--BoxMultiplySolid {
+  float: right;
+  cursor: pointer;
+}
+#MillimanOutlookAddin .addin .content {
+  color: #777;
+  padding: 18px 12px;
+}
+#MillimanOutlookAddin .addin .more-sites {
+  height: 505px;
+  overflow: hidden;
+  border-bottom: 1px solid #efefef;
+}
+#MillimanOutlookAddin .addin input {
+  /* margin: 5px 5px 5px 0;
+            height: 21px;
+            color: #555; */
+  line-height: normal;
+  width: 100%;
+}
+#MillimanOutlookAddin .addin .selector {
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #efefef;
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+#MillimanOutlookAddin .addin .selector:hover,
+#MillimanOutlookAddin .addin .selector:hover i {
+  color: #777;
+  border-color: #ababab;
+  cursor: pointer;
+}
+#MillimanOutlookAddin .addin .selector:active,
+#MillimanOutlookAddin .addin .selector:active i {
+  color: #777;
+  border-color: black;
+  background-color: #222;
+}
+#MillimanOutlookAddin .addin .selector.selected,
+#MillimanOutlookAddin .addin .selector.selected i {
+  color: #777;
+  background-color: #E5EFF7;
+  border-color: #ababab;
+}
+#MillimanOutlookAddin .addin .selector i {
+  color: #efefef;
+  float: right;
+  font-size: 20px;
+}
+#MillimanOutlookAddin .addin .pagination {
+  width: 67px;
+  text-align: center;
+  margin: 15px auto;
+}
+#MillimanOutlookAddin .addin .pagination div {
+  color: #acacac;
+  border: 1px solid #bebebe;
+  margin-left: 3px;
+  margin-right: 3px;
+  float: left;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+}
+#MillimanOutlookAddin .addin .pagination div:not(.disabled):hover {
+  color: black;
+  border-color: #ababab;
+  cursor: pointer;
+}
+#MillimanOutlookAddin .addin .pagination div:not(.disabled):hover:active {
+  color: #777;
+  border-color: black;
+  background-color: #222;
+}
+#MillimanOutlookAddin .addin .pagination div i {
+  margin-top: 5px;
+}
+#MillimanOutlookAddin .addin .pagination div.disabled {
+  color: #cfcfcf;
+  border-color: #dfdfdf;
+}
+#MillimanOutlookAddin .addin .slideLeftOff {
+  position: absolute;
+  left: -500px;
+  opacity: 0;
+}
+@media (min-width: 500px) {
+  #MillimanOutlookAddin .addin .page-1,
+  #MillimanOutlookAddin .addin .page-2 {
+    width: 95%;
+  }
+  #MillimanOutlookAddin .addin .slideLeftOff {
+    left: -550px;
+  }
+  #MillimanOutlookAddin .addin .page-2 {
+    left: 510px;
+  }
+}
+@media (min-width: 600px) {
+  #MillimanOutlookAddin .addin .page-1,
+  #MillimanOutlookAddin .addin .page-2 {
+    width: 96%;
+  }
+  #MillimanOutlookAddin .addin .slideLeftOff {
+    left: -650px;
+  }
+  #MillimanOutlookAddin .addin .page-2 {
+    left: 610px;
+  }
+}
+@media (min-width: 700px) {
+  #MillimanOutlookAddin .addin .page-1,
+  #MillimanOutlookAddin .addin .page-2 {
+    width: 97%;
+  }
+  #MillimanOutlookAddin .addin .slideLeftOff {
+    left: -750px;
+  }
+  #MillimanOutlookAddin .addin .page-2 {
+    left: 710px;
+  }
+}
+@media (min-width: 1020px) {
+  #MillimanOutlookAddin .addin .page-1,
+  #MillimanOutlookAddin .addin .page-2 {
+    width: 98%;
+  }
+  #MillimanOutlookAddin .addin .slideLeftOff {
+    left: -1500px;
+  }
+  #MillimanOutlookAddin .addin .page-2 {
+    left: 1500px;
+  }
+}
+@media (min-width: 1520px) {
+  #MillimanOutlookAddin .addin .page-1,
+  #MillimanOutlookAddin .addin .page-2 {
+    width: 99%;
+  }
+  #MillimanOutlookAddin .addin .slideLeftOff {
+    left: -2000px;
+  }
+  #MillimanOutlookAddin .addin .page-2 {
+    left: 2000px;
+  }
+}
+#MillimanOutlookAddin .addin .slideLeftOn {
+  position: absolute;
+  left: 0px !important;
+  opacity: 1 !important;
+}
