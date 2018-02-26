@@ -30,17 +30,13 @@
 @yellow: #ffc800;
 @peach: #ffc387;
 @orange: #ff6400;
-.property_(@property, @value) {
-    _: ~"; @{property}:" @value;
-}
 .vendor(@property, @value) {
-    .property_('-webkit-@{property}', @value); /* Safari */
-    .property_( '-khtml-@{property}', @value); /* Konqueror HTML */
-    .property_(   '-moz-@{property}', @value); /* Firefox */
-    .property_(    '-ms-@{property}', @value); /* Internet Explorer/Edge */
-    .property_(     '-o-@{property}', @value); /* Old, pre-WebKit, versions of Opera */
-    .property_(          @property,   @value); /* Non-prefixed version, currently
-                                                supported by Chrome and Opera */
+    -webkit-@{property}: @value; // Safari */
+     -khtml-@{property}: @value; // Konqueror HTML */
+       -moz-@{property}: @value; // Firefox */
+        -ms-@{property}: @value; // Internet Explorer/Edge */
+         -o-@{property}: @value; // Old, pre-WebKit, versions of Opera */
+            @{property}: @value; // Non-prefixed version, currently supported by Chrome and Opera */
 }
 #MillimanOutlookAddin {
     // body { padding: 0; margin: 0; font-family: 'Segoe UI', Segoe, san-serif;}
